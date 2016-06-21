@@ -10,9 +10,9 @@
 		270761E41D191F7A008CE1D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 270761E31D191F7A008CE1D9 /* main.m */; };
 		270761E71D191F7A008CE1D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 270761E61D191F7A008CE1D9 /* AppDelegate.m */; };
 		270761EA1D191F7A008CE1D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270761E91D191F7A008CE1D9 /* ViewController.m */; };
-		270761ED1D191F7A008CE1D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270761EB1D191F7A008CE1D9 /* Main.storyboard */; };
 		270761EF1D191F7A008CE1D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270761EE1D191F7A008CE1D9 /* Assets.xcassets */; };
 		270761F21D191F7A008CE1D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270761F01D191F7A008CE1D9 /* LaunchScreen.storyboard */; };
+		BB81489483B8357010C29FFB /* libPods-RACStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CB1F0B156267F0D6128AF9 /* libPods-RACStudy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,12 @@
 		270761E61D191F7A008CE1D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		270761E81D191F7A008CE1D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		270761E91D191F7A008CE1D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		270761EC1D191F7A008CE1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		270761EE1D191F7A008CE1D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270761F11D191F7A008CE1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270761F31D191F7A008CE1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762BDDFF609632351A0BA5C4 /* Pods-RACStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACStudy/Pods-RACStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		B8CB1F0B156267F0D6128AF9 /* libPods-RACStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACStudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61288251671E0E74B778368 /* Pods-RACStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACStudy/Pods-RACStudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB81489483B8357010C29FFB /* libPods-RACStudy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18DF540F0D39B20344B6FA91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8CB1F0B156267F0D6128AF9 /* libPods-RACStudy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		270761D61D191F7A008CE1D9 = {
 			isa = PBXGroup;
 			children = (
 				270761E11D191F7A008CE1D9 /* RACStudy */,
 				270761E01D191F7A008CE1D9 /* Products */,
+				8DE327C3C563DA11F0CFF15A /* Pods */,
+				18DF540F0D39B20344B6FA91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +71,11 @@
 		270761E11D191F7A008CE1D9 /* RACStudy */ = {
 			isa = PBXGroup;
 			children = (
+				270761F91D192196008CE1D9 /* Classes */,
 				270761E51D191F7A008CE1D9 /* AppDelegate.h */,
 				270761E61D191F7A008CE1D9 /* AppDelegate.m */,
 				270761E81D191F7A008CE1D9 /* ViewController.h */,
 				270761E91D191F7A008CE1D9 /* ViewController.m */,
-				270761EB1D191F7A008CE1D9 /* Main.storyboard */,
 				270761EE1D191F7A008CE1D9 /* Assets.xcassets */,
 				270761F01D191F7A008CE1D9 /* LaunchScreen.storyboard */,
 				270761F31D191F7A008CE1D9 /* Info.plist */,
@@ -79,6 +92,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		270761F91D192196008CE1D9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				270761FA1D192482008CE1D9 /* Signal */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		270761FA1D192482008CE1D9 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		8DE327C3C563DA11F0CFF15A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				762BDDFF609632351A0BA5C4 /* Pods-RACStudy.debug.xcconfig */,
+				D61288251671E0E74B778368 /* Pods-RACStudy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 270761F61D191F7A008CE1D9 /* Build configuration list for PBXNativeTarget "RACStudy" */;
 			buildPhases = (
+				BF5D6E2FE46E45EE8D9B4CE4 /* 📦 Check Pods Manifest.lock */,
 				270761DB1D191F7A008CE1D9 /* Sources */,
 				270761DC1D191F7A008CE1D9 /* Frameworks */,
 				270761DD1D191F7A008CE1D9 /* Resources */,
+				75BE7CFDD5EBFE637C583A42 /* 📦 Embed Pods Frameworks */,
+				E16BD35CE0FAC1F80024F623 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,11 +178,58 @@
 			files = (
 				270761F21D191F7A008CE1D9 /* LaunchScreen.storyboard in Resources */,
 				270761EF1D191F7A008CE1D9 /* Assets.xcassets in Resources */,
-				270761ED1D191F7A008CE1D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75BE7CFDD5EBFE637C583A42 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACStudy/Pods-RACStudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF5D6E2FE46E45EE8D9B4CE4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E16BD35CE0FAC1F80024F623 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACStudy/Pods-RACStudy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		270761DB1D191F7A008CE1D9 /* Sources */ = {
@@ -158,14 +245,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		270761EB1D191F7A008CE1D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				270761EC1D191F7A008CE1D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		270761F01D191F7A008CE1D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,9 +340,11 @@
 		};
 		270761F71D191F7A008CE1D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762BDDFF609632351A0BA5C4 /* Pods-RACStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KK.RACStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +353,11 @@
 		};
 		270761F81D191F7A008CE1D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61288251671E0E74B778368 /* Pods-RACStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KK.RACStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +383,7 @@
 				270761F81D191F7A008CE1D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
